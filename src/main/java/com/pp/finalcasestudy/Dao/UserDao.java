@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pp.budgetapp.Dao;
+package com.pp.finalcasestudy.Dao;
 
-import com.pp.budgetapp.Entity.Income;
-import com.pp.budgetapp.Entity.User;
-import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.pp.finalcasestudy.Entity.User;
 
 /**
  *
  * @author carlo
  */
 @Repository
-public interface IncomeDao extends JpaRepository <Income, Integer> {
-    List<Income> findAllByUser(User user);
+public interface UserDao extends JpaRepository <User, Integer> {
+    
 }

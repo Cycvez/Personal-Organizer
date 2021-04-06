@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pp.budgetapp.Controller;
+package com.pp.finalcasestudy.Controller;
 
-import com.pp.budgetapp.Dao.ExpensesDao;
-import com.pp.budgetapp.Dao.IncomeDao;
-import com.pp.budgetapp.Dao.TimecardDao;
-import com.pp.budgetapp.Dao.UserDao;
-import com.pp.budgetapp.Entity.User;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.pp.finalcasestudy.Dao.ExpensesDao;
+import com.pp.finalcasestudy.Dao.IncomeDao;
+import com.pp.finalcasestudy.Dao.TimecardDao;
+import com.pp.finalcasestudy.Dao.UserDao;
+import com.pp.finalcasestudy.Entity.User;
 
 /**
  *

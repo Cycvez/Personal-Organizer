@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pp.budgetapp.Entity;
+package com.pp.finalcasestudy.Entity;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -19,8 +19,8 @@ import javax.persistence.ManyToOne;
  *
  * @author carlo
  */
-@Entity()
-public class Income {
+@Entity
+public class Expenses {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -28,16 +28,18 @@ public class Income {
 
     @Column
     private String name;
-    
+
     @Column
     private String description;
-    
+
     @Column
     private BigDecimal amount;
-    
+
     @ManyToOne
-    @JoinColumn(name= "user", nullable=false)
+    @JoinColumn(name = "user", nullable = false)
     private User user;
+
+
 
     public int getId() {
         return id;
@@ -82,11 +84,11 @@ public class Income {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + this.id;
-        hash = 59 * hash + Objects.hashCode(this.name);
-        hash = 59 * hash + Objects.hashCode(this.description);
-        hash = 59 * hash + Objects.hashCode(this.amount);
-        hash = 59 * hash + Objects.hashCode(this.user);
+        hash = 41 * hash + this.id;
+        hash = 41 * hash + Objects.hashCode(this.name);
+        hash = 41 * hash + Objects.hashCode(this.description);
+        hash = 41 * hash + Objects.hashCode(this.amount);
+        hash = 41 * hash + Objects.hashCode(this.user);
         return hash;
     }
 
@@ -101,7 +103,7 @@ public class Income {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Income other = (Income) obj;
+        final Expenses other = (Expenses) obj;
         if (this.id != other.id) {
             return false;
         }
@@ -119,5 +121,5 @@ public class Income {
         }
         return true;
     }
-    
+
 }

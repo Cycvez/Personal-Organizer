@@ -1,4 +1,4 @@
-package com.pp.budgetapp;
+package com.pp.finalcasestudy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

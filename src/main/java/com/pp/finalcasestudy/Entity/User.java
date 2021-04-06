@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pp.budgetapp.Entity;
+package com.pp.finalcasestudy.Entity;
 
 import java.util.Objects;
 import javax.persistence.Column;

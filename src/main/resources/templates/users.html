@@ -90,7 +90,7 @@ and open the template in the editor.
                                 <td th:text="${user.id}">ID</td>
                                 <td th:text="${user.firstname}">First Name</td>
                                 <td th:text="${user.lastname}">Last Name</td>
-                                <td><a hreft="#" th:href="@{/editUser(id=${user.id})}">edit</a></td>
+                                <td><a href="#" th:href="@{/editUser(id=${user.id})}">edit</a></td>
                                 <td><a href="#" th:href="@{/deleteUser(id=${user.id})}">Delete</a></td>
                             </tr>
                         </tbody>
